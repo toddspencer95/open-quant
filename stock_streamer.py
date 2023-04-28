@@ -42,7 +42,7 @@ ticker_frame.pack()
 tk.Label(ticker_frame, text="Ticker Symbol:").pack(side=tk.LEFT)
 ticker_entry = tk.Entry(ticker_frame)
 ticker_entry.pack(side=tk.LEFT)
-ticker_entry.insert(0, "IBM")
+ticker_entry.insert(0, "TICKER")
 
 # Create a button to start the WebSocket connection
 start_button = tk.Button(root, text="Start", command=start_websocket)
