@@ -1,2 +1,2 @@
 # open-quant
-Open source 
+Open source quantitative trading software
