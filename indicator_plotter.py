@@ -9,11 +9,9 @@ import sys
 import datetime as dt
 
 symbol = 'AAPL'  # Replace with the stock symbol of your choice
-#api_key = 'GETFNQ5SDYN8OV2N'  # Replace with your Alpha Vantage API key
-#url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={api_key}&datatype=csv'
 start_date = dt.datetime.now() - dt.timedelta(days=1)
 end_date = dt.datetime.now()
-data = yf.download(symbol, start=start_date, end=end_date, interval='1m')
+data = yf.download(symbol, start=start_date, end=end_date, interval='1h')
 
 #response = requests.get(url)
 #data = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
