@@ -70,7 +70,7 @@ df_close = df[['Date', 'Close']].copy()
 df_close = df_close.set_index('Date')
 df_close.head()
 
-decomp = STL(endog=df_close['Close'], period=365)
+decomp = STL(endog=df_close['Close'], period=10)
 res = decomp.fit()
 fig = res.plot()
 fig.set_size_inches(20, 8)
